@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <center>
+    <form action="">
+    <body>
+      <table border="1px">
+        <thead>
+          <tr>
+            <th colspan="2">Registration Form</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><label for="FN">First name</label></td>
+            <td><input type="text" id="FN" name="firstName" value="" /></td>
+          </tr>
+          <tr>
+            <td><label for="LN">Last name</label></td>
+            <td><input type="text" id="LN" name="lastName" value="" /></td>
+          </tr>
+          <tr>
+            <td><label for="UN">User name</label></td>
+            <td><input type="text" id="UN" name="userName" value="" /></td>
+          </tr>
+          <tr>
+            <td><label for="pass">Password</label></td>
+            <td><input type="password" id="pass" name="pass" value="" /></td>
+          </tr>
+          <tr>
+            <td><label for="track">Track</label></td>
+            <td>
+              <select name="track" id="track">
+                <option value="bi">BI</option>
+                <option value="react">React JS</option>
+                <option value="node">Node JS</option>
+                <option value="ML">Machine Learning</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="2"><label>Gender</label></td>
+            <td>
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+              /><label for="male">Male</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+              /><label for="female">Female</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Favorites</td>
+            <td>
+              <!-- football -->
+              <input
+                type="checkbox"
+                id="football"
+                name="fav"
+                value="football"
+              /><label for="football">Football</label>
+              <!-- basketball -->
+              <input
+                type="checkbox"
+                id="basketball"
+                name="fav"
+                value="basketball"
+              /><label for="basketball">Basketball</label>
+              <!-- games -->
+               <br>
+              <input
+                type="checkbox"
+                id="games"
+                name="fav"
+                value="games"
+              /><label for="games">Games</label>
+               <!-- reading -->
+               <br>
+              <input
+                type="checkbox"
+                id="reading"
+                name="fav"
+                value="reading"
+              /><label for="reading">Reading</label>
+              <!-- swimming -->
+              <input
+                type="checkbox"
+                id="swimming"
+                name="fav"
+                value="swimming"
+              /><label for="swimming">Swimming</label>
+               <!-- trave -->
+               <br>
+              <input
+                type="checkbox"
+                id="trave"
+                name="fav"
+                value="trave"
+              /><label for="trave">Trave</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="area">Description</label></td>
+            <td><textarea name="desc" id="area" rows=9 cols=19></textarea></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit"> <input type="reset" ></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"><input name="file" type="file"></td>
+          </tr>
+        </tfoot>
+      </table>
+      </form>
+    </body>
+  </center>
+</html>
