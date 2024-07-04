@@ -1,0 +1,61 @@
+.parent{
+  border:12px solid #eee;
+  margin: 20px auto;
+  width: 800px;
+  font-family: "Roboto", sans-serif;
+}
+h3{
+  font-size: 25px;
+}
+img{
+  width: 100%;
+}
+.title{
+  padding: 15px;
+  margin-top: -10px;
+}
+.title_description{
+  padding-left: 15px;
+  margin-top: -28px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+.date{
+  opacity: 0.65;
+}
+.content{
+  padding:10px 20px;
+}
+button{
+  width: 130px;
+  height: 40px;
+  margin-left: 20px;
+  background-color: transparent;
+  font-weight: 550;
+  opacity: 0.8;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.425);
+  display: inline;
+  margin-bottom: 15px;
+  
+}
+a{
+  text-decoration: none;
+}
+button span{
+  font-size: 70%;
+  font-weight: 900;
+}
+.comment{
+  display: inline;
+  float: right;
+  margin-right: 25px;
+  font-weight: 500;
+}
+.comment .numOfComments{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 1px 6px;
+}
