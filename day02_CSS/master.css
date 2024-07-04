@@ -1,32 +1,32 @@
-.parent{
-  border:12px solid #eee;
+.parent {
+  border: 12px solid #eee;
   margin: 20px auto;
   width: 800px;
   font-family: "Roboto", sans-serif;
 }
-h3{
+h3 {
   font-size: 25px;
 }
-img{
+img {
   width: 100%;
 }
-.title{
+.title {
   padding: 15px;
   margin-top: -10px;
 }
-.title_description{
+.title_description {
   padding-left: 15px;
   margin-top: -28px;
   font-size: 16px;
   opacity: 0.8;
 }
-.date{
+.date {
   opacity: 0.65;
 }
-.content{
-  padding:10px 20px;
+.content {
+  padding: 10px 20px;
 }
-button{
+button {
   width: 130px;
   height: 40px;
   margin-left: 20px;
@@ -37,22 +37,22 @@ button{
   border-color: rgba(0, 0, 0, 0.425);
   display: inline;
   margin-bottom: 15px;
-  
+  cursor: pointer;
 }
-a{
+a {
   text-decoration: none;
 }
-button span{
+button span {
   font-size: 70%;
   font-weight: 900;
 }
-.comment{
+.comment {
   display: inline;
   float: right;
   margin-right: 25px;
   font-weight: 500;
 }
-.comment .numOfComments{
+.comment .numOfComments {
   display: inline-block;
   background-color: black;
   color: white;

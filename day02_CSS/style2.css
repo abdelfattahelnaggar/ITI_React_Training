@@ -1,0 +1,43 @@
+body{
+  font-family: "Roboto", sans-serif;
+}
+img {
+  width: 350px;
+  display: inline;
+  float: left;
+  margin-top: 100px;
+}
+h1 {
+  display: inline-block;
+  margin-top: 200px;
+  margin-left: 30px;
+  font-weight: bolder;
+}
+p {
+  display: inline-block;
+  margin-left: 30px;
+  width: 1000px;
+}
+.readMore{
+  margin: 30px 30px ;
+  border: none;
+  color: white;
+  background-color: rgba(238, 23, 8, 0.747);
+  width: 130px;
+  height: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+.hire{
+   margin: 30px -14px ;
+  border: none;
+  color: white;
+  background-color:rgba(1, 1, 36, 0.788);
+  width: 130px;
+  height: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
