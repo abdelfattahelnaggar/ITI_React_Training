@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+  <body>
+    <form action="">
+      <input id="number1" placeholder="Enter First Number" type="number" />
+      <input type="number" placeholder="Enter Second Number" id="number2" />
+      <div id="buttons">
+        <button id="add" type="button" onclick="addOper()">
+          <img class="imageIcon" src="./images/add.png" alt="" />
+          <span>ADD</span>
+        </button>
+        <button id="mult" type="button" onclick="multOper()">
+          <img
+            class="imageIcon"
+            src="./images/multiply-mathematical-sign.png"
+            alt=""
+          />
+          <span>MULT</span>
+        </button>
+      </div>
+      <div id="result">
+        <h4 id="sumHeader">Add Operation:</h4>
+        <span id="addResult"></span>
+        <h4 id="multHeader">Multiplication Operation:</h4>
+        <span id="multResult"></span>
+      </div>
+    </form>
+    <script src="./master.js"></script>
+  </body>
+</html>
