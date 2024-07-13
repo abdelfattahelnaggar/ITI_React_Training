@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students data</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="addStudentForm">
+      <form>
+        <input
+          id="nameInput"
+          required
+          type="text"
+          placeholder="Enter Student Name"
+        />
+        <input
+          id="ageInput"
+          required
+          type="number"
+          placeholder="Enter Student Age"
+        />
+        <button 
+        id="btn" 
+        type="button" 
+        
+        onclick="addStudent()">Add Student </button>
+      </form>
+    </div>
+    <div class="dataTable">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Actions</th>
+          </tr>
+          <tbody>
+          </tbody>
+        </thead>
+      </table>
+    </div>
+    <div class="slider">
+      <img id="imageSlider" src="./images/slider/1.jpg" alt="">
+      <div class="buttons">
+        <button onclick="prevImage()" id="prevBtn">❮</button>
+       <button onclick="nextImage()" id="nextBtn">❯</button>
+      </div>
+    </div>
+
+    <script src="./master.js"></script>
+  </body>
+</html>
