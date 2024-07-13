@@ -62,7 +62,7 @@ p#show {
   align-self: center;
   width: 99%;
 }
-button:hover {
+#btn:hover {
   opacity: 0.8;
 }
 footer {
@@ -71,8 +71,8 @@ footer {
   width: 100%;
   background-color: #04aa6d;
   padding: 10px 0;
-  position: relative;
-  top:170px;
+  position: absolute;
+  bottom: 0;
 }
 footer p button {
   display: inline-block;
