@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #04aa6d;
+}
+
+.dataTable table {
+  width: 95%;
+  margin: 50px auto;
+  border: 3px solid #f1f1f1;
+  border-radius: 5px;
+  border-spacing: 0;
+  text-align: left;
+  box-shadow: 0 1px 20px #f1f1f1;
+}
+
+.dataTable table th,
+.dataTable table td {
+  padding: 11px;
+  text-align: center;
+}
+
+.dataTable table thead {
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 900;
+  font-size: large;
+}
+
+.dataTable table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+hr {
+  height: 15px;
+  background-color: var(--main-color);
+}
+
+/* =========================================== */
+.checkLengthOfArguments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+}
+.inputs {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+input {
+  padding: 11px;
+  align-self: center;
+  margin: 20px;
+  width: 95%;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  outline: 0;
+  margin-bottom: 15px;
+  background-color: #eeeeee44;
+  box-shadow: 0 1px 10px #e9e7e7;
+}
+#checkLenBtn {
+  align-self: center;
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  align-self: center;
+  width: 50%;
+  margin: 20px 0;
+}
