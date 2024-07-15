@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert Message</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="alertB">
+        <button id="success" onclick="succAlert()">
+          <i
+            id="successIcon"
+            class="fas fa-check-circle"
+            style="color: white"
+          ></i>
+           Success Alert
+        </button>
+        <button id="error" onclick="errorAlert()">
+          <i
+            id="errorIcon"
+            class="fas fa-times-circle"
+            style="color: white"
+          ></i> Error Alert</button>
+      </div>
+      <div class="message" id="message">
+        <h1 id="myH1">Success</h1>
+        <i
+          id="Icon"
+          class="fas fa-check-circle"
+        ></i>
+        <p id="myP">This is a Success Message</p>
+      </div>
+    </div>
+    <script src="./master.js"></script>
+  </body>
+</html>

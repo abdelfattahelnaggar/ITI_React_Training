@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatic slider</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body> 
+    <div class="slider">
+      <img id="imageSlider" src="./images/slider/1.jpg" alt="">
+      <div class="buttons">
+        <button onclick="prevImage()" id="prevBtn">❮</button>
+        <button onclick="start()" id="play">play</button>
+        <button onclick="stop()" id="stop">stop</button>
+       <button onclick="nextImage()" id="nextBtn">❯</button>
+      </div>
+    </div>
+    <div id="goNext">
+      <button onclick="openTLPage()" class="nextBtnStyle" id="traffic">
+        Go To Next
+      </button>
+    </div>
+    <script src="./master.js"></script>
+  </body>
+</html>

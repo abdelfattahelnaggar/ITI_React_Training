@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #04aa6d;
+}
+.slider {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  margin: 0 auto;
+}
+.slider img {
+  width: 90%;
+  height: 450px;
+  margin: 2px auto;
+  margin-bottom: 12px;
+  border: 3px solid #f1f1f1;
+  border-radius: 25px 0 25px 0;
+  -webkit-border-radius: 25px 0 25px 0;
+  -moz-border-radius: 25px 0 25px 0;
+  -ms-border-radius: 25px 0 25px 0;
+  -o-border-radius: 25px 0 25px 0;
+  box-shadow: 0px 0px 30px #afaeae91;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.buttons #prevBtn,
+#nextBtn {
+  background-color: #4aafcd;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 3px 5px;
+  display: flex;
+  font-weight: bolder;
+  font-size: 16px;
+  justify-content: baseline;
+  cursor: pointer;
+  -webkit-border-radius: 3px 5px;
+  -moz-border-radius: 3px 5px;
+  -ms-border-radius: 3px 5px;
+  -o-border-radius: 3px 5px;
+  align-self: center;
+}
+#prevBtn:hover,
+#play:hover,
+#stop:hover,
+#nextBtn:hover {
+  opacity: 0.8;
+}
+#play,
+#stop {
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px 45px;
+  border: none;
+  border-radius: 3px 5px;
+  display: flex;
+  font-weight: bolder;
+  font-size: 17px;
+  justify-content: baseline;
+  cursor: pointer;
+  -webkit-border-radius: 3px 5px;
+  -moz-border-radius: 3px 5px;
+  -ms-border-radius: 3px 5px;
+  -o-border-radius: 3px 5px;
+  align-self: center;
+}
+#stop {
+  background-color: #da4f4a;
+}
+
+#goNext {
+  width: 100%;
+}
+
+/*=====================================================================*/
+.trafficLight {
+  width: 150px;
+  height: 350px;
+  margin: 20px auto;
+  background-color: #222;
+  border: 4px solid #444;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.red,
+.yellow,
+.green {
+  width: 80px;
+  height: 80px;
+  align-self: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: none;
+}
+.red {
+  background-color: rgba(255, 0, 0, 0.308);
+  box-shadow: 0 0 20px #111 inset, 0 0 10px red;
+}
+.yellow {
+  background-color: rgba(255, 255, 0, 0.315);
+  box-shadow: 0 0 20px #111 inset, 0 0 10px yellow;
+}
+.green {
+  background-color: rgba(0, 128, 0, 0.253);
+  box-shadow: 0 0 20px #111 inset, 0 0 10px green;
+}
+#state {
+  text-align: center;
+  font-weight: bolder;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.267);
+  display: block;
+  width: 80px;
+  padding: 10px;
+  background-color: #444;
+  margin: 0 auto;
+}
+/*=====================================================================*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+.alertB {
+  display: flex;
+}
+#success,
+#error {
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px 25px;
+  width: 200px;
+  border: none;
+  border-radius: 3px 5px;
+  font-weight: bolder;
+  font-size: 17px;
+  cursor: pointer;
+  -webkit-border-radius: 3px 5px;
+  -moz-border-radius: 3px 5px;
+  -ms-border-radius: 3px 5px;
+  -o-border-radius: 3px 5px;
+  align-self: center;
+}
+#success {
+  margin-right: 20px;
+}
+#error {
+  background-color: red;
+}
+#success:hover,
+#error:hover {
+  opacity: 0.8;
+}
+
+.message{
+  width: 600px;
+  line-height: 60px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #eee;
+  color: green;
+  font-weight: bolder;
+}
+.message i{
+  font-size: 90px;
+}
+/*=====================================================================*/
+.nextBtnStyle {
+  width: 100%;
+  line-height: 58px;
+  margin-top: 30px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+
+  justify-content: baseline;
+  cursor: pointer;
+}
