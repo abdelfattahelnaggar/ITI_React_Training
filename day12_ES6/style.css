@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.firstTask{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.firstTask article{
+  margin: 20px auto;
+}
+.firstTask article input{
+  outline: 0;
+  border: none;
+  padding: 15px 30px;
+  margin-left: 15px;
+  box-shadow: 0 0 20px rgba(27, 27, 27, 0.24);
+}
+.firstTask #btn1{
+  width: 200px;
+  margin: 10px auto;
+  padding: 20px ;
+  background-color: rgba(23, 231, 127, 0.851);
+  border: none;
+  color: #eee;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 19px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+#btn1:hover{
+  opacity: 0.8;
+}
+#result{
+  margin: 20px auto;
+}
