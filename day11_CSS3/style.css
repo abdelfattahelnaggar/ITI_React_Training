@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Task 1 "Play Card" */
+
+/* Task 2 "Canvas Circle Generator" */
+.secondTask {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.secondTask .controls button {
+  background-color: #18d8a8;
+  color: white;
+  padding: 25px 55px;
+  border: none;
+  border-radius: 3px 5px;
+  font-weight: bolder;
+  font-size: 23px;
+  justify-content: baseline;
+  cursor: pointer;
+  -webkit-border-radius: 3px 5px;
+  -moz-border-radius: 3px 5px;
+  -ms-border-radius: 3px 5px;
+  -o-border-radius: 3px 5px;
+  align-self: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.secondTask .controls button:hover {
+  opacity: 0.7;
+}
+.secondTask canvas {
+  border: 1px solid rgba(0, 0, 0, 0.158);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
+}
+hr {
+  height: 10px;
+  outline: none;
+  background-color: #18d8a8;
+  margin: 50px 0;
+  border: none;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+/* Task 3 "hiding the image when hover by animation" */
+
+.thirdTask {
+  width: 100%;
+  position: relative;
+}
+.thirdTask article {
+  width: 50%;
+  height: 500px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+.thirdTask article img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+.thirdTask article img:hover {
+  animation-name: changeOpacity;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes changeOpacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Task 4 "changing the box-shadow colors by hovering" */
+.styled-button {
+  padding: 25px 90px;
+  font-size: 56px;
+  color: white;
+  background-color: #4caf50;
+  display: block;
+  margin: 0px auto 50px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.styled-button:hover {
+  opacity: 0.8;
+  animation-name: changeBoxShadow;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+@keyframes changeBoxShadow {
+  0% {
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.4);
+  }
+  20% {
+    box-shadow: 0 0 80px rgba(255, 0, 0, 0.8);
+  }
+  40% {
+    box-shadow: 0 0 80px rgba(0, 255, 0, 0.8);
+  }
+  60% {
+    box-shadow: 0 0 80px rgba(0, 0, 255, 0.8);
+  }
+  80% {
+    box-shadow: 0 0 80px rgba(255, 255, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 80px rgba(255, 0, 255, 0.8);
+  }
+}
+
+/* last task */
+.fifth-task {
+  width: 100%;
+}
+.circle {
+  margin: 150px auto;
+  width: 200px;
+  height: 200px;
+  background-color: #f7c6c7;
+  border-radius: 50%;
+  border: 1px solid black;
+  animation: moveUpDown 2s infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

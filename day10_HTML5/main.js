@@ -35,6 +35,7 @@ navigator.geolocation.getCurrentPosition(success, error);
 function success(position) {
   latitude = position.coords.latitude;
   longitude = position.coords.longitude;
+
   console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
   getPosition();
 }
@@ -60,6 +61,7 @@ function getPosition() {
     request.onload = function () {
       if (request.status >= 200 && request.status < 300) {
         var data = JSON.parse(request.responseText);
+        alert("Look to the console :)");
         console.log(data.city);
         console.log(data.principalSubdivision);
         console.log(data.countryName);
@@ -71,9 +73,10 @@ function getPosition() {
     request.onerror = function () {
       console.error("Request failed");
     };
-  } else {
-    console.error("Latitude and Longitude are not defined");
   }
+  // else if (latitude == undefined && longitude == undefined) {
+  //   console.error("Latitude and Longitude are not defined");
+  // }
 }
 
 getPosition();
