@@ -121,16 +121,49 @@ class Rectangle extends Shape {
   }
 }
 
-// Handel circle button
+// Circle button handler
 let circleBtn = document.getElementById("cirBtn");
 let circleAreaResult = document.getElementById("Carea");
 let circlePerimeterResult = document.getElementById("Cperimeter");
+
 circleBtn.addEventListener("click", function () {
   let circleR = Number(document.querySelector(
-    ".shapesEquations .shape .inputs input"
+    ".shapesEquations .shape .inputs input.circleInput"
   ).value);
   let circleOjb = new Circle(circleR);
   circleAreaResult.innerHTML = `Circle Area = ${(circleOjb.area()).toFixed(1)}`
   circlePerimeterResult.innerHTML = `Circle Perimeter = ${(circleOjb.perimeter()).toFixed(1)}`
 });
 
+// Rectangle button handler
+let rectBtn = document.getElementById("rectBtn");
+let rectAreaResult = document.getElementById("rarea");
+let rectPerimeterResult = document.getElementById("rperimeter");
+
+rectBtn.addEventListener("click", function () {
+  let rectLen = Number(document.querySelector(
+    ".shapesEquations .shape .inputs input.len"
+  ).value);
+  let rectWid = Number(document.querySelector(
+    ".shapesEquations .shape .inputs input.wid"
+  ).value);
+
+  let rectOjb = new Rectangle(rectLen, rectWid);
+  rectAreaResult.innerHTML = `Rectangle Area = ${(rectOjb.area()).toFixed(1)}`
+  rectPerimeterResult.innerHTML = `Rectangle Perimeter = ${(rectOjb.perimeter()).toFixed(1)}`
+});
+
+
+// Square button handler
+let sqrBtn = document.getElementById("sqrBtn");
+let sqrAreaResult = document.getElementById("sarea");
+let sqrPerimeterResult = document.getElementById("sperimeter");
+
+sqrBtn.addEventListener("click", function () {
+  let squareSide = Number(document.querySelector(
+    ".shapesEquations .shape .inputs input.squareInput"
+  ).value);
+  let sqrOjb = new Square(squareSide);
+  sqrAreaResult.innerHTML = `Square Area = ${(sqrOjb.area()).toFixed(1)}`
+  sqrPerimeterResult.innerHTML = `Square Perimeter = ${(sqrOjb.perimeter()).toFixed(1)}`
+});
