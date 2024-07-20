@@ -121,6 +121,7 @@ class Rectangle extends Shape {
   }
 }
 
+
 // Circle button handler
 let circleBtn = document.getElementById("cirBtn");
 let circleAreaResult = document.getElementById("Carea");
@@ -150,10 +151,10 @@ rectBtn.addEventListener("click", function () {
   let rectWid = Number(
     document.querySelector(".shapesEquations .shape .inputs input.wid").value
   );
-
-  let rectOjb = new Rectangle(rectLen, rectWid);
-  rectAreaResult.innerHTML = `Rectangle Area = ${rectOjb.area().toFixed(1)}`;
-  rectPerimeterResult.innerHTML = `Rectangle Perimeter = ${rectOjb
+  console.log(rectLen);
+  let rectObj = new Rectangle(rectLen, rectWid);
+  rectAreaResult.innerHTML = `Rectangle Area = ${rectObj.area().toFixed(1)}`;
+  rectPerimeterResult.innerHTML = `Rectangle Perimeter = ${rectObj
     .perimeter()
     .toFixed(1)}`;
 });
