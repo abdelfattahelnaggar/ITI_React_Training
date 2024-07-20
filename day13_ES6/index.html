@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Users</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="dataTable">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Website</th>
+            <th>City</th>
+            <th>Company</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <hr />
+    </section>
+
+    <!-- ===================OOP tasks=================== -->
+
+    <!-- ------------------Circle------------------ -->
+
+    <section class="shapesEquations">
+      <section class="shape">
+        <svg width="200" height="150">
+          <circle
+            cx="90"
+            cy="75"
+            r="60"
+            stroke="#18d8a8"
+            stroke-width="6"
+            fill="none"
+          />
+        </svg>
+        <article class="inputs">
+          <input
+            class="circleInput"
+            type="number"
+            name="cirRadius"
+            placeholder="Enter the radius of the circle!"
+          />
+        </article>
+
+        <button id="cirBtn" type="button">Click Me</button>
+        <article class="results">
+          <p id="Carea"></p>
+          <p id="Cperimeter"></p>
+        </article>
+      </section>
+      <hr class="separate">
+
+      <!-- ------------------Rectangle------------------ -->
+
+      <section class="shape">
+        <svg width="200" height="120">
+          <rect
+            x="10"
+            y="28"
+            width="150"
+            height="90"
+            stroke="#18d8a8"
+            stroke-width="6"
+            fill="none"
+          />
+        </svg>
+
+        <article class="inputs rectInputs">
+          <input
+            type="number"
+            name="rectLen"
+            placeholder="Enter the length of the rectangle"
+          />
+          <input
+            type="number"
+            name="rectWid"
+            placeholder="Enter the width of the rectangle"
+          />
+        </article>
+        <button id="rectBtn" type="button">Click Me</button>
+        <article class="results">
+          <p id="area"></p>
+          <p id="perimeter"></p>
+        </article>
+      </section>
+      <hr class="separate">
+      <!-- ------------------Square------------------ -->
+      <section class="shape">
+        <svg width="200" height="200">
+          <rect
+            x="25"
+            y="35"
+            width="120"
+            height="120"
+            stroke="#18d8a8"
+            stroke-width="6"
+            fill="none"
+          />
+        </svg>
+
+        <article class="inputs">
+          <input
+            class="squareInput"
+            type="number"
+            name="squareLen"
+            placeholder="Enter the length of the side"
+          />
+        </article>
+        <button id="squareBtn" type="button">Click Me</button>
+
+        <article class="results">
+          <p id="area"></p>
+          <p id="perimeter"></p>
+        </article>
+      </section>
+    </section>
+
+    <script src="./master.js"></script>
+  </body>
+</html>
