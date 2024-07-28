@@ -3,7 +3,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #000000;
+  background-color: #000000 !important;
   font-family: "Lato", sans-serif;
 }
 * {

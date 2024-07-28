@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ShowButton from './components/ShowButton.js';
-import HideButton from './components/HideButton.js';
-import ToDoList from './components/ToDoList.js';
+import ShowButton from './components/ShowButton.jsx';
+import HideButton from './components/HideButton.jsx';
+import ToDoList from './components/ToDoList.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
