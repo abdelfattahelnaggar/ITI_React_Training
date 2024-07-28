@@ -1,30 +1,22 @@
-import React, { useState } from 'react';
-import ShowButton from './components/ShowButton.js';
-import HideButton from './components/HideButton.js';
-import ToDoList from './components/ToDoList.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import Feature from "./components/Feature";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Offer from "./components/Offer";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
-    const [showTodos, setShowTodos] = useState(false);
-
-  const toggleShowTodos = () => {
-    setShowTodos(!showTodos);
-  };
-
   return (
-    <div className="App container mt-5 text-center">
-      {!showTodos && (
-        <div className="d-flex justify-content-center">
-          <ShowButton toggleShowTodos={toggleShowTodos} />
-        </div>
-      )}
-      {showTodos && (
-        <div className="d-flex justify-content-center">
-          <HideButton toggleShowTodos={toggleShowTodos} />
-        </div>
-      )}
-      {showTodos && <ToDoList />}
+    <div className="App">
+      <Navbar />
+      <Header />
+      <Feature />
+      <Offer />
+      <About />
+      <Contact/>
     </div>
   );
 }
